@@ -470,8 +470,27 @@
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
-	
-	
-    
+	<!-- Firebase Configuration -->
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+		
+		// Your web app's Firebase configuration
+		const firebaseConfig = {
+			apiKey: "AIzaSyBZyZqOeco6PbHRlrAry_Fp2ShZO4acAu8",
+			authDomain: "ffmovie-e604d.firebaseapp.com",
+			projectId: "ffmovie-e604d",
+			storageBucket: "ffmovie-e604d.firebasestorage.app",
+			messagingSenderId: "561417444993",
+			appId: "1:561417444993:web:900b911cdccb0428017780",
+			measurementId: "G-2VDEMLQZHY"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	</script>
+
   </body>
 </html>
